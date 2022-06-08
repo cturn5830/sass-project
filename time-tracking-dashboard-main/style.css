@@ -1,0 +1,218 @@
+/*
+### Neutral
+*/
+body, html {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(226deg, 43%, 10%);
+  color: white;
+}
+
+body {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+body section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: fit-content;
+}
+@media (min-width: 1200px) {
+  body section .BTNselector {
+    flex-direction: column;
+    width: fit-content;
+    margin-left: 1rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  body section.section_wrapper {
+    margin-top: 15vh;
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    grid-auto-rows: 50%;
+    grid-template-areas: "profile" "profile";
+  }
+  body section.section_wrapper .PersonalInfo {
+    grid-area: profile;
+  }
+}
+
+.container {
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  display: inline;
+}
+@media (min-width: 1200px) {
+  .container {
+    min-height: 200px;
+  }
+}
+.container > :first-child {
+  border-radius: 15px;
+  padding: 1rem;
+}
+.container .top {
+  background-color: red;
+  height: 1rem;
+  position: relative;
+  z-index: 50;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-repeat: no-repeat;
+  background-position: 95% -15px;
+}
+.container .content {
+  position: relative;
+  background-color: hsl(235deg, 46%, 20%);
+  top: -1rem;
+  border-radius: 15px;
+  padding: 1rem;
+  z-index: 52;
+  font-weight: bold;
+}
+
+.swap_content {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 1200px) {
+  .swap_content {
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 0;
+  }
+  .swap_content span {
+    padding-top: 1rem;
+    font-size: 3rem !important;
+  }
+}
+.swap_content span {
+  font-size: 2rem;
+  font-weight: 100;
+}
+.swap_content div {
+  opacity: 0.6;
+  font-weight: 100;
+}
+
+.PersonalInfo {
+  flex-wrap: wrap;
+}
+.PersonalInfo #PersonalInfoTop {
+  display: flex;
+  gap: 1rem;
+  background-color: hsl(246deg, 80%, 60%) !important;
+}
+@media (min-width: 1200px) {
+  .PersonalInfo #PersonalInfoTop {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .PersonalInfo #PersonalInfoTop img {
+    width: 50% !important;
+  }
+  .PersonalInfo #PersonalInfoTop h2 {
+    font-size: 2.5rem;
+  }
+}
+.PersonalInfo #PersonalInfoTop img {
+  width: 30%;
+  border: solid 3px white;
+  border-radius: 100%;
+}
+.PersonalInfo #PersonalInfoTop .report {
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  margin: auto 0 auto 0;
+}
+.PersonalInfo #PersonalInfoTop .report span {
+  opacity: 0.6;
+  padding: 0;
+}
+.PersonalInfo #PersonalInfoTop .report h2 {
+  margin: 0;
+  font-weight: 100;
+  opacity: 0.85;
+}
+.PersonalInfo section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1.3rem 0;
+}
+.PersonalInfo section button {
+  width: fit-content;
+  background-color: transparent;
+  border: none;
+  color: white;
+  opacity: 0.5;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: 0.6s;
+}
+
+.selected {
+  opacity: 1 !important;
+  transition: 0.6s;
+}
+
+.work .top {
+  background-color: hsl(15deg, 100%, 70%) !important;
+  background-image: url("images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: 95% -15px;
+}
+
+.play .top {
+  background-color: hsl(195deg, 74%, 62%) !important;
+  background-image: url("images/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: 95% -15px;
+}
+
+.study .top {
+  background-color: hsl(348deg, 100%, 68%) !important;
+  background-image: url("images/icon-study.svg");
+  background-repeat: no-repeat;
+  background-position: 95% -15px;
+}
+
+.exercise .top {
+  background-color: hsl(145deg, 58%, 55%) !important;
+  background-image: url("images/icon-exercise.svg");
+  background-repeat: no-repeat;
+  background-position: 95% -15px;
+}
+
+.social .top {
+  background-color: hsl(264deg, 64%, 52%) !important;
+  background-image: url("images/icon-social.svg");
+  background-repeat: no-repeat;
+  background-position: 95% -15px;
+}
+
+.self_care .top {
+  background-color: hsl(43deg, 84%, 65%) !important;
+  background-image: url("images/icon-self-care.svg");
+  background-repeat: no-repeat;
+  background-position: 95% -15px;
+}
+
+.attribution {
+  position: relative;
+  top: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+
+/*# sourceMappingURL=style.css.map */

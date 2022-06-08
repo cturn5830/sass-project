@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="section_wrapper">
+    <div class="PersonalInfo container">
+      <div id="PersonalInfoTop">
+        <img src="images/image-jeremy.png"/>
+      <span class="report">
+        <div>
+          <span>Report for</span>
+          <h2>Jeremy Robson</h2>
+        </div>
+      </span>
+      </div>
+      
+      <section class="BTNselector">
+        <button id="daily" class="selected">
+          Daily
+        </button>
+        <button id="weekly">
+          Weekly
+        </button>
+        <button id="monthly">
+          Monthly
+        </button>
+      </section>
+    </div>
+    <!-- work container start -->
+    <div class="work container">
+      <div class="top"></div>
+      <div class="content">
+        Work
+        <div class="swap_content swapdaily">
+          <span>
+            5hrs <!-- daily -->
+          </span>
+          <div>
+            Previous Day - 7hrs <!-- daily -->
+          </div>
+        </div>
+        <div class="swap_content swapweekly" style="display:none;">
+          <span>
+            32hrs <!-- weekly -->
+          </span>
+          <div>
+            Last Week - 36hrs <!-- weekly -->
+          </div>
+        </div>
+        <div class="swap_content swapmonthly" style="display:none;">
+          <span>
+            103hrs <!-- monthly -->
+          </span>
+          <div>
+            Last Month - 128hrs <!-- monthly -->
+          </div>
+        </div>
+      </div>
+      <!-- work container end -->
+    </div>
+     <!-- play container start -->
+     <div class="play container">
+      <div class="top"></div>
+      <div class="content">
+        Play
+        <div class="swap_content swapdaily">
+          <span>
+            1hr <!-- daily -->
+          </span>
+          <div>
+            Previous Day - 2hrs <!-- daily -->
+          </div>
+        </div>
+        <div class="swap_content swapweekly" style="display:none;">
+          <span>
+            10hrs <!-- weekly -->
+          </span>
+          <div>
+            Last Week - 8hrs <!-- weekly -->
+          </div>
+        </div>
+        <div class="swap_content swapmonthly" style="display:none;">
+          <span>
+            23hrs <!-- monthly -->
+          </span>
+          <div>
+            Last Month - 29hrs <!-- monthly -->
+          </div>
+        </div>
+      </div>
+      <!-- play container end -->
+    </div>
+    <!-- study container start -->
+    <div class="study container">
+      <div class="top"></div>
+      <div class="content">
+        Study
+        <div class="swap_content swapdaily">
+          <span>
+            0hrs <!-- daily -->
+          </span>
+          <div>
+            Previous Day - 1hr <!-- daily -->
+          </div>
+        </div>
+        <div class="swap_content swapweekly" style="display:none;">
+          <span>
+            4hrs <!-- weekly -->
+          </span>
+          <div>
+            Last Week - 7hrs <!-- weekly -->
+          </div>
+        </div>
+        <div class="swap_content swapmonthly" style="display:none;">
+          <span>
+            13hrs <!-- monthly -->
+          </span>
+          <div>
+            Last Month - 19hrs <!-- monthly -->
+          </div>
+        </div>
+      </div>
+      <!-- study container end -->
+    </div>
+
+        <!-- exercise container start -->
+        <div class="exercise container">
+          <div class="top"></div>
+          <div class="content">
+            Exercise
+            <div class="swap_content swapdaily">
+              <span>
+                1hr <!-- daily -->
+              </span>
+              <div>
+                Previous Day - 1hr <!-- daily -->
+              </div>
+            </div>
+            <div class="swap_content swapweekly" style="display:none;">
+              <span>
+                4hrs <!-- weekly -->
+              </span>
+              <div>
+                Last Week - 5hrs <!-- weekly -->
+              </div>
+            </div>
+            <div class="swap_content swapmonthly" style="display:none;">
+              <span>
+                11hrs <!-- monthly -->
+              </span>
+              <div>
+                Last Month - 18hrs <!-- monthly -->
+              </div>
+            </div>
+          </div>
+          <!-- exercise container end -->
+        </div>
+              <!-- social container start -->
+              <div class="social container">
+                <div class="top"></div>
+                <div class="content">
+                  Social
+                  <div class="swap_content swapdaily">
+                    <span>
+                      1hr <!-- daily -->
+                    </span>
+                    <div>
+                      Previous Day - 3hr <!-- daily -->
+                    </div>
+                  </div>
+                  <div class="swap_content swapweekly" style="display:none;">
+                    <span>
+                      5hrs <!-- weekly -->
+                    </span>
+                    <div>
+                      Last Week - 10hrs <!-- weekly -->
+                    </div>
+                  </div>
+                  <div class="swap_content swapmonthly" style="display:none;">
+                    <span>
+                      21hrs <!-- monthly -->
+                    </span>
+                    <div>
+                      Last Month - 23hrs <!-- monthly -->
+                    </div>
+                  </div>
+                </div>
+                <!-- social container end -->
+              </div>
+  
+                            <!-- self_care container start -->
+              <div class="self_care container">
+                <div class="top"></div>
+                <div class="content">
+                  Self Care
+                  <div class="swap_content swapdaily">
+                    <span>
+                      0hr <!-- daily -->
+                    </span>
+                    <div>
+                      Previous Day - 1hr <!-- daily -->
+                    </div>
+                  </div>
+                  <div class="swap_content swapweekly" style="display:none;">
+                    <span>
+                      2hrs <!-- weekly -->
+                    </span>
+                    <div>
+                      Last Week - 2hrs <!-- weekly -->
+                    </div>
+                  </div>
+                  <div class="swap_content swapmonthly" style="display:none;">
+                    <span>
+                      7hrs <!-- monthly -->
+                    </span>
+                    <div>
+                      Last Month - 11hrs <!-- monthly -->
+                    </div>
+                  </div>
+                </div>
+                <!-- self_care container end -->
+              </div>
+  
+  
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://theconnorturner.com/">Connor Turner</a>.
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,34 @@
+.container{
+    background-color: $blueD;   
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    display: inline;
+    @media(min-width:$mobilePX){
+        min-height: 200px;
+    }
+    & > :first-child{
+        border-radius: 15px;
+        padding: 1rem;
+    }
+    .top{
+        background-color: red;
+        height:1rem;
+        position: relative;
+        z-index: 50;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background-repeat: no-repeat;
+        background-position:95% -15px;
+    }
+    .content{
+        position: relative;       
+        background-color: $blueD;
+        top:-1rem;
+        border-radius: 15px;
+        padding: 1rem; 
+        z-index: 52;
+        font-weight: bold;
+    }
+}
